@@ -147,13 +147,23 @@
             ]
         },
         {
-            "weight": 0.3,
+            "weight": 0.5,
             "bid_duration": 75.0,
             "rewards": [
                 "",
                 "jiskun_frontier_lab",
                 "jiskun_frontier_lab",
                 "jiskun_frontier_lab"
+            ]
+        },
+        {
+            "weight": 0.5,
+            "bid_duration": 75.0,
+            "rewards": [
+                "",
+                "viturak_phase_crystalizer",
+                "viturak_phase_crystalizer",
+                "viturak_phase_crystalizer"
             ]
         }],
         "crystal_market":

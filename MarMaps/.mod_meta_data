@@ -1,0 +1,11 @@
+{
+    "compatibility_version": 2,
+    "display_version": "1.2.0",
+    "display_name": "Mar's Maps",
+    "short_description": "Just some custom maps plus remixes of stock maps I made for myself and my friends.",
+    "long_description": "Just some custom maps plus remixes of stock maps I made for myself and my friends. Mostly just uploading them to make it easier to share them with my friends, so I can't guarantee I'll be particularly responsive to requests. I mostly play PvE/Co-op, so most of the maps will be geared towards that. IDK how fun they would be for competitive multiplayer.",
+    "logos": {
+        "large_logo": "logo.png",
+        "small_logo": "logo.png"
+    }
+}

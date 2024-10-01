@@ -935,6 +935,7 @@
             "advent_unlock_swamp_biosphere",
             "advent_unlock_synchronous_shield_unit_item",
             "advent_unlock_telepathic_relay_unit_item",
+            "advent_unlock_temple_of_arrival_unit_item",
             "advent_unlock_temple_of_purification_unit_item",
             "advent_unlock_temple_of_renewal_structure",
             "advent_unlock_temple_of_renewal_structure_recharge_shields_ability",
@@ -1102,7 +1103,8 @@
         "advent_silent_monastery",
         "advent_unity_protectorate",
         "advent_temple_of_purification",
-        "advent_temple_of_resurrection"
+        "advent_temple_of_resurrection",
+        "advent_temple_of_arrival"
     ],
     "planet_component_build_groups": [
     {

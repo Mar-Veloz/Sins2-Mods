@@ -41,6 +41,15 @@
             "allow_opposite_angle": false
         },
         "firing_angle": 2.0,
+        "auto_cast":
+        {
+            "type": "pick_planet_within_gravity_well_distance",
+            "target_definitions": [
+            {
+                "target_filter": "common_planet_bombing"
+            }],
+            "gravity_well_distance_range": "deliverance_engine_culture_spread_loyalist_range_value"
+        },
         "watched_buff": "advent_deliverance_engine_culture_spread_loyalist_on_self"
     },
     "gui":

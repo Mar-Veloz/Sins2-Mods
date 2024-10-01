@@ -1,0 +1,11 @@
+{
+    "compatibility_version": 2,
+    "display_version": "1.0.0",
+    "display_name": "Temple of Arrival",
+    "short_description": "Gives the Advent a much-needed mobility boost by adding the Temple of Arrival, which will transport ships from your home planet to the planet it is built on.",
+    "long_description": "Late game Advent are painfully slow: Vasari get Phase Gates and Phase Resonance, and TEC get increased movement speed in their culture and the ability to build an entirely new fleet in seconds, but Advent don't have any mobility abilities other than the Recall Unity power. This mod adds the Temple of Arrival planet item, which works like a reverse Recall power: when activated, the planet item will teleport all ships currently at your home planet to the planet the item is built on.",
+    "logos": {
+        "large_logo": "logo.png",
+        "small_logo": "logo.png"
+    }
+}

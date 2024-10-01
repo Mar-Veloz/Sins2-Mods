@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_evangelism",
+    "field_coord": [7, 9],
+    "research_time": 450.0,
+    "price":
+    {
+        "credits": 1650.0,
+        "metal": 475.0,
+        "crystal": 825.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "ultimate",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["advent_unity_mana_2"]
+    ],
+    "name": "advent_unlock_temple_of_arrival_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_temple_of_arrival_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_temple_of_arrival_unit_item_hud_icon",
+    "tooltip_picture": "advent_temple_of_arrival_unit_item_tooltip_picture"
+}

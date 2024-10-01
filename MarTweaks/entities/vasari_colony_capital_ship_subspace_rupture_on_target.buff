@@ -5,13 +5,8 @@
     {
         "distance": "subspace_rupture_radius_value"
     },
-    "stacking_limit":
-    {
-        "stacking_limit": "fixed_one",
-        "stacking_limit_met_behavior": "preserve_existing_buff"
-    },
+    "stacking_limit": "fixed_one",
     "stacking_ownership_type": "for_all_players",
-    "restart_other_stacked_buffs_when_started": true,
     "time_actions": [
     {
         "execution_interval_value": "fixed_one",
@@ -26,47 +21,10 @@
                 },
                 "operators": [
                 {
-                    "constraint":
-                    {
-                        "constraint_type": "unit_passes_unit_constraint",
-                        "unit":
-                        {
-                            "unit_type": "operand_destination"
-                        },
-                        "unit_constraint":
-                        {
-                            "constraint_type": "has_mutation",
-                            "mutation": "gravity_effect_active"
-                        }
-                    },
                     "operator_type": "apply_damage",
                     "damage_source": "ability",
                     "damage_affect_type": "hull_and_armor_and_shields",
                     "damage_value": "subspace_rupture_improved_damage_rate_value",
-                    "penetration_value": "subspace_rupture_armor_penetration_value"
-                },
-                {
-                    "constraint":
-                    {
-                        "constraint_type": "composite_not",
-                        "constraint":
-                        {
-                            "constraint_type": "unit_passes_unit_constraint",
-                            "unit":
-                            {
-                                "unit_type": "operand_destination"
-                            },
-                            "unit_constraint":
-                            {
-                                "constraint_type": "has_mutation",
-                                "mutation": "gravity_effect_active"
-                            }
-                        }
-                    },
-                    "operator_type": "apply_damage",
-                    "damage_source": "ability",
-                    "damage_affect_type": "hull_and_armor_and_shields",
-                    "damage_value": "subspace_rupture_normal_damage_rate_value",
                     "penetration_value": "subspace_rupture_armor_penetration_value"
                 }]
             }]
@@ -101,55 +59,13 @@
         "visibility_scope": "negative",
         "tooltip_line_groups": [
         {
-            "is_visible_constraint":
-            {
-                "constraint_type": "composite_not",
-                "constraint":
-                {
-                    "constraint_type": "unit_passes_unit_constraint",
-                    "unit":
-                    {
-                        "unit_type": "current_spawner"
-                    },
-                    "unit_constraint":
-                    {
-                        "constraint_type": "has_mutation",
-                        "mutation": "gravity_effect_active"
-                    }
-                }
-            },
             "lines": [
             {
                 "rendering_type": "single_value",
-                "label_text": "tooltip.ability.damage",
-                "value_id": "subspace_rupture_normal_damage_rate_value",
-                "value_color": "negative",
-                "value_suffix": "per_second",
-                "is_resolved_value": true
-            }]
-        },
-        {
-            "is_visible_constraint":
-            {
-                "constraint_type": "unit_passes_unit_constraint",
-                "unit":
-                {
-                    "unit_type": "current_spawner"
-                },
-                "unit_constraint":
-                {
-                    "constraint_type": "has_mutation",
-                    "mutation": "gravity_effect_active"
-                }
-            },
-            "lines": [
-            {
-                "rendering_type": "single_value",
-                "label_text": "tooltip.ability.damage",
+                "label_text": "tooltip.ability.damage_rate",
                 "value_id": "subspace_rupture_improved_damage_rate_value",
                 "value_color": "negative",
-                "value_suffix": "per_second",
-                "is_resolved_value": true
+                "value_suffix": "per_second"
             }]
         }]
     }

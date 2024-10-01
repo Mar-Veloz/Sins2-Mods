@@ -23,20 +23,9 @@
             },
             {
                 "rendering_type": "single_value",
-                "label_text": "unit_modifier.armor_strength",
+                "label_text": "tooltip.ability.antimatter_removed",
                 "value_id": "disrupt_armor_strength_modifier_value",
                 "value_color": "positive"
-            },
-            {
-                "rendering_type": "single_value",
-                "label_text": "tooltip.ability.stacking_limit",
-                "value_id": "disrupt_armor_stacking_limit_value"
-            },
-            {
-                "rendering_type": "single_value",
-                "label_text": "tooltip.ability.duration",
-                "value_id": "disrupt_armor_duration_value",
-                "value_suffix": "seconds"
             }]
         }]
     }

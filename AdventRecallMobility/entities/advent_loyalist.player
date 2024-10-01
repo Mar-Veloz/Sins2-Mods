@@ -935,6 +935,7 @@
             "advent_unlock_swamp_biosphere",
             "advent_unlock_synchronous_shield_unit_item",
             "advent_unlock_telepathic_relay_unit_item",
+            "advent_unlock_temple_of_arrival_unit_item",
             "advent_unlock_temple_of_assimilation_unit_item",
             "advent_unlock_temple_of_pilgrimage_unit_item",
             "advent_unlock_temple_of_renewal_structure",
@@ -1098,7 +1099,8 @@
         "advent_silent_monastery",
         "advent_temple_of_pilgrimage",
         "advent_unity_protectorate",
-        "advent_temple_of_assimilation"
+        "advent_temple_of_assimilation",
+        "advent_temple_of_arrival"
     ],
     "faction_planet_components": [
         "advent_temple_of_assimilation"

@@ -1,0 +1,11 @@
+{
+    "compatibility_version": 2,
+    "display_version": "1.1.0",
+    "display_name": "Improved Auto Cast Logic",
+    "short_description": "Improves/fixes auto cast logic for various abilities.",
+    "long_description": "Improves/fixes auto cast logic for various abilities. I've fixed any abilities I personally noticed, but I have almost certainly missed some. If you notice any abilities that have missing or broken auto cast logic, feel free to let me know!",
+    "logos": {
+        "large_logo": "logo.png",
+        "small_logo": "logo.png"
+    }
+}

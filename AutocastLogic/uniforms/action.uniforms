@@ -1,0 +1,27 @@
+{
+    "common_action_values": [
+    {
+        "action_value_id": "fixed_five",
+        "action_value":
+        {
+            "transform_type": "fixed",
+            "values": [5, 5, 5, 5, 5]
+        }
+    },
+    {
+        "action_value_id": "fixed_ten",
+        "action_value":
+        {
+            "transform_type": "fixed",
+            "values": [10, 10, 10, 10, 10]
+        }
+    },
+    {
+        "action_value_id": "fixed_twenty_five",
+        "action_value":
+        {
+            "transform_type": "fixed",
+            "values": [25, 25, 25, 25, 25]
+        }
+    }]
+}

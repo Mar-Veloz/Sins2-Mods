@@ -1,0 +1,12 @@
+{
+    "scenarios": [
+	"vortex",
+        "battle_royale",
+	"sagittarius_showdown",
+	"modded_shuriken",
+	"modded_gemini",
+	"modded_titans_of_cimtar"
+    ],
+    "fake_server_scenarios": [
+    ]
+}

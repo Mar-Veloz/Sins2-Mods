@@ -121,7 +121,7 @@
         "action_value_id": "the_maw_consume_execution_interval_value",
         "action_value":
         {
-            "values": [0.5, 0.5, 0.5]
+            "values": [0, 0, 0]
         }
     },
     {

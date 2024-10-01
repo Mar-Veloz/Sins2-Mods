@@ -11,7 +11,7 @@
                 "titan"
             ],
             "ownerships": [
-                "friendly"
+                "self"
             ],
             "constraints": [
             {

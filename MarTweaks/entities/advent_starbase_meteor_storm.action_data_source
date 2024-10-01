@@ -60,7 +60,7 @@
         "action_value_id": "meteor_storm_damage_rate_value",
         "action_value":
         {
-            "values": [100.0, 150.0],
+            "values": [200.0, 300.0],
             "ratio":
             {
                 "ratio_type": "per_spell_power",

@@ -223,7 +223,7 @@
             ]
         },
         {
-            "weight": 0.5,
+            "weight": 0.3,
             "bid_duration": 75.0,
             "rewards": [
                 "metal_market_monopolization_0",
@@ -237,9 +237,9 @@
             "bid_duration": 75.0,
             "rewards": [
                 "",
-                "",
-                "pranast_bastion_module",
-                "pranast_bastion_module"]
+                "pranast_armored_citadel",
+                "pranast_armored_citadel",
+                "pranast_armored_citadel"]
         }],
         "crystal_market":
         {
@@ -315,7 +315,7 @@
                 "cooldown_duration": 240
             },
             {
-                "reward": "pranast_armored_citadel",
+                "reward": "pranast_bastion_module",
                 "required_reputation_level": 2,
                 "influence_point_cost": 4,
                 "cooldown_duration": 360

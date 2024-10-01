@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "action_data_source": "advent_temple_of_arrival",
+    "level_source": "unit_item",
+    "active_actions":
+    {
+        "cooldown_time": "arrival_cooldown_time_value",
+        "unity_mana_cost": "arrival_unity_mana_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_gravity_well_of_unit",
+                "gravity_well_origin_unit":
+                {
+                    "unit_type": "home_planet"
+                },
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "recall_ship_target_filter"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_temple_of_arrival"
+                }]
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "advent_temple_of_arrival_unit_item_hud_icon",
+        "tooltip_picture": "advent_temple_of_arrival_unit_item_tooltip_picture",
+        "name": "advent_temple_of_arrival_unit_item_name",
+        "description": "advent_temple_of_arrival_unit_item_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.charge_delay",
+                "value_id": "arrival_charge_time_value",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}
