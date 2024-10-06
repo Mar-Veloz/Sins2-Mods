@@ -1,8 +1,29 @@
 {
     "version": 0,
+    "level_count": 3,
     "target_filters": [
     {
-        "target_filter_id": "recall_ship_target_filter",
+        "target_filter_id": "sending_planet_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_detected"
+            },
+            {
+                "constraint_type": "is_in_dominant_culture",
+                "dominant_culture_player_relationship": "self"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "sending_ship_target_filter",
         "target_filter":
         {
             "constraints":
@@ -26,24 +47,24 @@
     }],
     "action_values": [
     {
-        "action_value_id": "arrival_unity_mana_cost_value",
+        "action_value_id": "sending_unity_mana_cost_value",
         "action_value":
         {
-            "values": [100.0]
+            "values": [100.0, 200.0, 300.0]
         }
     },
     {
-        "action_value_id": "arrival_cooldown_time_value",
+        "action_value_id": "sending_cooldown_time_value",
         "action_value":
         {
-            "values": [120.0]
+            "values": [300.0, 300.0, 300.0]
         }
     },
     {
-        "action_value_id": "arrival_charge_time_value",
+        "action_value_id": "sending_charge_time_value",
         "action_value":
         {
-            "values": [30.0]
+            "values": [90.0, 60.0, 30.0]
         }
     }],
     "effect_alias_bindings": [

@@ -33,7 +33,7 @@
     }],
     "time_actions": [
     {
-        "first_action_delay_time_value": "arrival_charge_time_value",
+        "first_action_delay_time_value": "sending_charge_time_value",
         "execution_interval_count_value": "fixed_one",
         "action_group":
         {
@@ -49,7 +49,7 @@
                     "operator_type": "teleport_to_gravity_well",
                     "destination_reference_unit":
                     {
-                        "unit_type": "first_spawner"
+                        "unit_type": "target"
                     }
                 }]
             }]
@@ -67,7 +67,7 @@
             {
                 "rendering_type": "single_value",
                 "label_text": "tooltip.ability.charge_delay",
-                "value_id": "arrival_charge_time_value",
+                "value_id": "sending_charge_time_value",
                 "value_suffix": "seconds"
             }]
         }]

@@ -1,11 +1,12 @@
 {
     "version": 0,
-    "action_data_source": "advent_temple_of_arrival",
-    "level_source": "unit_item",
+    "action_data_source": "advent_unity_sending",
+    "level_source": "unity_ability_level",
+    "total_required_unity_points": [2, 5, 9],
     "active_actions":
     {
-        "cooldown_time": "arrival_cooldown_time_value",
-        "unity_mana_cost": "arrival_unity_mana_cost_value",
+        "cooldown_time": "sending_cooldown_time_value",
+        "unity_mana_cost": "sending_unity_mana_cost_value",
         "actions":
         {
             "actions": [
@@ -13,7 +14,7 @@
                 "action_type": "use_unit_operators_on_units_in_gravity_well_of_unit",
                 "gravity_well_origin_unit":
                 {
-                    "unit_type": "home_planet"
+                    "unit_type": "target"
                 },
                 "operators_constraint":
                 {
@@ -22,20 +23,26 @@
                     {
                         "unit_type": "operand_destination"
                     },
-                    "target_filter_id": "recall_ship_target_filter"
+                    "target_filter_id": "sending_ship_target_filter"
                 },
                 "operators": [
                 {
                     "operator_type": "apply_buff",
-                    "buff": "advent_temple_of_arrival"
+                    "buff": "advent_unity_sending"
                 }]
             }]
-        }
+        },
+        "targeting_type": "unit_targeted",
+        "targeting_ui": "pick_gravity_well",
+        "target_filters": [
+            "sending_planet_target_filter"]
+
     },
     "gui":
     {
         "hud_icon": "advent_temple_of_arrival_unit_item_hud_icon",
         "tooltip_picture": "advent_temple_of_arrival_unit_item_tooltip_picture",
+        "unity_window_picture": "advent_unity_recall_ability_tooltip_picture",
         "name": "advent_temple_of_arrival_unit_item_name",
         "description": "advent_temple_of_arrival_unit_item_description",
         "tooltip_line_groups": [
@@ -44,7 +51,7 @@
             {
                 "rendering_type": "single_value",
                 "label_text": "tooltip.ability.charge_delay",
-                "value_id": "arrival_charge_time_value",
+                "value_id": "sending_charge_time_value",
                 "value_suffix": "seconds"
             }]
         }]
