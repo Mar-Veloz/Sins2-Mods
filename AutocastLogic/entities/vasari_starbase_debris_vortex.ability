@@ -36,9 +36,6 @@
                     "constraint_type": "composite_and",
                     "constraints": [
                     {
-                        "constraint_type": "has_recently_been_damaged"
-                    },
-                    {
                         "constraint_type": "has_recently_fired_weapon"
                     },
                     {
