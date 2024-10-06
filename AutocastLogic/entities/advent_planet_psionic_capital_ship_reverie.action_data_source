@@ -3,11 +3,25 @@
     "level_count": 3,
     "target_filters": [
     {
-        "target_filter_id": "reverie_auto_cast_target_filter",
+        "target_filter_id": "reverie_auto_cast_high_priority_target_filter",
         "target_filter":
         {
             "unit_types": [
                 "capital_ship"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    },
+    {
+        "target_filter_id": "reverie_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "structure"
             ],
             "ownerships": [
                 "enemy"]
