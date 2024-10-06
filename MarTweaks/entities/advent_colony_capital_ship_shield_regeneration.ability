@@ -6,7 +6,6 @@
     "active_actions":
     {
         "cooldown_time": "shield_regeneration_cooldown_time_value",
-        "stop_use_type": "on_spawned_buff_removed",
         "antimatter_cost": "shield_regeneration_antimatter_cost_value",
         "actions":
         {
