@@ -10,7 +10,9 @@
                 "planet"
             ],
             "ownerships": [
-                "friendly"
+                "friendly",
+                "enemy",
+                "none"
             ],
             "constraints": [
             {
@@ -66,27 +68,105 @@
         {
             "values": [90.0, 60.0, 30.0]
         }
+    },
+    {
+        "action_value_id": "sending_debuff_duration_value",
+        "action_value":
+        {
+            "values": [300.0, 300.0, 300.0]
+        }
+    },
+    {
+        "action_value_id": "sending_debuff_linear_speed_modifier_value",
+        "action_value":
+        {
+            "values": [-0.60, -0.45, -0.30]
+        }
+    },
+        {
+        "action_value_id": "sending_debuff_ability_cooldown_modifier_value",
+        "action_value":
+        {
+            "values": [1.50, 1.00, 0.50]
+        }
+    },
+        {
+        "action_value_id": "sending_debuff_weapon_cooldown_modifier_value",
+        "action_value":
+        {
+            "values": [0.75, 0.50, 0.25]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "sending_debuff_linear_speed_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "sending_debuff_linear_speed_modifier_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "sending_debuff_ability_cooldown_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "ability_cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "sending_debuff_ability_cooldown_modifier_value"
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "sending_debuff_weapon_cooldown_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "sending_debuff_weapon_cooldown_modifier_value"
+        }
     }],
     "effect_alias_bindings": [
     {
-        "alias_name": "advent_unity_recall_buff_large",
+        "alias_name": "advent_unity_sending_buff_large",
         "alias_binding":
         {
             "particle_effect": "advent_unity_recall_large"
         }
     },
     {
-        "alias_name": "advent_unity_recall_buff_medium",
+        "alias_name": "advent_unity_sending_buff_medium",
         "alias_binding":
         {
             "particle_effect": "advent_unity_recall_medium"
         }
     },
     {
-        "alias_name": "advent_unity_recall_buff_small",
+        "alias_name": "advent_unity_sending_buff_small",
         "alias_binding":
         {
             "particle_effect": "advent_unity_recall_small"
+        }
+    },
+    {
+        "alias_name": "advent_unity_sending_debuff_large",
+        "alias_binding":
+        {
+            "particle_effect": "mind_fracture_large"
+        }
+    },
+    {
+        "alias_name": "advent_unity_sending_debuff_medium",
+        "alias_binding":
+        {
+            "particle_effect": "mind_fracture_medium"
+        }
+    },
+    {
+        "alias_name": "advent_unity_sending_debuff_small",
+        "alias_binding":
+        {
+            "particle_effect": "mind_fracture_small"
         }
     }]
 }

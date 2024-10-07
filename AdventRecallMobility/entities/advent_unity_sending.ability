@@ -36,15 +36,14 @@
         "targeting_ui": "pick_gravity_well",
         "target_filters": [
             "sending_planet_target_filter"]
-
     },
     "gui":
     {
-        "hud_icon": "advent_temple_of_arrival_unit_item_hud_icon",
-        "tooltip_picture": "advent_temple_of_arrival_unit_item_tooltip_picture",
-        "unity_window_picture": "advent_unity_recall_ability_tooltip_picture",
-        "name": "advent_temple_of_arrival_unit_item_name",
-        "description": "advent_temple_of_arrival_unit_item_description",
+        "hud_icon": "advent_subjugator_cruiser_suppression_ability_hud_icon",
+        "tooltip_picture": "advent_subjugator_cruiser_suppression_ability_tooltip_picture",
+        "unity_window_picture": "advent_subjugator_cruiser_suppression_ability_tooltip_picture",
+        "name": "advent_unity_sending_ability_name",
+        "description": "advent_unity_sending_ability_description",
         "tooltip_line_groups": [
         {
             "lines": [
@@ -53,6 +52,27 @@
                 "label_text": "tooltip.ability.charge_delay",
                 "value_id": "sending_charge_time_value",
                 "value_suffix": "seconds"
+            }]
+        },
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "sending_debuff_duration_value",
+                "value_suffix": "seconds"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "sending_debuff_linear_speed_modifier"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "sending_debuff_ability_cooldown_modifier"
+            },
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "sending_debuff_weapon_cooldown_modifier"
             }]
         }]
     }

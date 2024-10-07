@@ -1,5 +1,7 @@
 {
     "ids": [
-        "advent_unity_sending"
+        "advent_unity_sending",
+        "advent_unity_sending_debuff",
+        "advent_unity_sending_debuff_on_strikecraft"
     ]
 }

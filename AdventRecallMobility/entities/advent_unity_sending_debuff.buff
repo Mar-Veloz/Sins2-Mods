@@ -1,0 +1,86 @@
+{
+    "version": 0,
+    "active_duration": "sending_debuff_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "advent_unity_sending_debuff_small",
+                        "medium_unit": "advent_unity_sending_debuff_medium",
+                        "large_unit": "advent_unity_sending_debuff_large"
+                    }
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_spawned_strikecraft",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_unity_sending_debuff_on_strikecraft"
+                }]
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "sending_debuff_linear_speed_modifier"
+    },
+    {
+        "buff_unit_modifier_id": "sending_debuff_ability_cooldown_modifier"
+    }],
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "sending_debuff_weapon_cooldown_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_subjugator_cruiser_suppression_ability_hud_icon",
+        "name": "advent_unity_sending_ability_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "negative",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "sending_debuff_linear_speed_modifier"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "sending_debuff_ability_cooldown_modifier"
+            },
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "sending_debuff_weapon_cooldown_modifier"
+            }]
+        }]
+    }
+}
