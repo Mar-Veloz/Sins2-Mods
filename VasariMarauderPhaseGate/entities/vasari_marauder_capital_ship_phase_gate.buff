@@ -1,0 +1,20 @@
+{
+    "version": 0,
+    "active_duration": "phase_gate_duration_value",
+    "make_current_spawner_dead_on_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "gui":
+    {
+        "hud_icon": "vasari_deploy_phase_gate_unit_item_hud_icon",
+        "name": "vasari_marauder_capital_ship_phase_gate_ability_name",
+        "is_expire_time_suppressed": false,
+        "is_visible_within_unit_tooltip": true
+    }
+
+}

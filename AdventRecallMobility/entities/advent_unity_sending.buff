@@ -23,9 +23,9 @@
                     "mesh_point": "center",
                     "effect_by_size":
                     {
-                        "small_unit": "advent_unity_recall_buff_small",
-                        "medium_unit": "advent_unity_recall_buff_medium",
-                        "large_unit": "advent_unity_recall_buff_large"
+                        "small_unit": "advent_unity_sending_buff_small",
+                        "medium_unit": "advent_unity_sending_buff_medium",
+                        "large_unit": "advent_unity_sending_buff_large"
                     }
                 }
             }]
@@ -33,7 +33,7 @@
     }],
     "time_actions": [
     {
-        "first_action_delay_time_value": "arrival_charge_time_value",
+        "first_action_delay_time_value": "sending_charge_time_value",
         "execution_interval_count_value": "fixed_one",
         "action_group":
         {
@@ -49,16 +49,40 @@
                     "operator_type": "teleport_to_gravity_well",
                     "destination_reference_unit":
                     {
-                        "unit_type": "first_spawner"
+                        "unit_type": "target"
                     }
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_unity_sending_debuff"
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_child_strikecraft_of_unit",
+                "strikecraft_carrier_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_unity_sending_debuff_on_strikecraft"
                 }]
             }]
         }
     }],
     "gui":
     {
-        "hud_icon": "advent_temple_of_arrival_unit_item_hud_icon",
-        "name": "advent_temple_of_arrival_unit_item_name",
+        "hud_icon": "advent_unity_recall_ability_hud_icon",
+        "name": "advent_unity_sending_ability_name",
         "is_visible_within_unit_tooltip": true,
         "visibility_scope": "positive",
         "tooltip_line_groups": [
@@ -67,7 +91,7 @@
             {
                 "rendering_type": "single_value",
                 "label_text": "tooltip.ability.charge_delay",
-                "value_id": "arrival_charge_time_value",
+                "value_id": "sending_charge_time_value",
                 "value_suffix": "seconds"
             }]
         }]

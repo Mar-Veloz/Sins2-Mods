@@ -1,0 +1,11 @@
+{
+    "compatibility_version": 2,
+    "display_version": "1.0.0",
+    "display_name": "Alternate Minor Faction Trades",
+    "short_description": "Updates some minor faction sold items to be more useful.",
+    "long_description": "Updates some minor faction sold items to be more useful.",
+    "logos": {
+        "large_logo": "logo.png",
+        "small_logo": "logo.png"
+    }
+}

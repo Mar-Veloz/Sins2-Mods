@@ -127,7 +127,7 @@
                 "auction_ignored": "viturak_npc_auction_ignored_0",
                 "attacking": "viturak_npc_attacking_0"
             }
-        },
+        },        
         "ai_params":
         {
             "will_fleet_colonize": false,
@@ -242,12 +242,23 @@
         },
         "simple_can_ever_be_colonized_planet_types": [
             "asteroid",
+            "barren",
+            "city",
+            "crystalline",
             "desert",
             "ferrous",
+            "gas_giant",
+            "hive_asteroid",
+            "ice_asteroid",
+            "ice_moon",
             "ice",
+            "magnetic",
             "moon",
             "oceanic",
+            "ship_graveyard",
+            "swamp",
             "terran",
+            "volcanic_moon",
             "volcanic"
         ],
         "simple_planet_level": 10,
@@ -274,6 +285,8 @@
             "research":
             {},
             "surveying":
+            {},
+            "focus":
             {}
         },
         "simple_trade_capacity":
@@ -283,6 +296,7 @@
         },
         "reputation":
         {
+            "reward_between_gravity_well_range": 30.0,
             "rewards": [
             {
                 "reward": "viturak_remote_fabrication",

@@ -1,0 +1,11 @@
+{
+    "compatibility_version": 2,
+    "display_version": "1.0.0",
+    "display_name": "Antorak Marauder Deploy Phase Gate ability",
+    "short_description": "Adds an ability for the Antorak Marauder to temporarily deploy a phase gate.",
+    "long_description": "Brings back (a reworked version of) the Stabilize Phase Space ability for the Antorak Marauder. It is brought back as a regular ability, replacing the Sabotage ability. It temporarily deploys a phase gate to gravity well the Antorak is in, with a duration of 2/3/4 minutes, and a cooldown of 10/7.5/5 minutes.",
+    "logos": {
+        "large_logo": "logo.png",
+        "small_logo": "logo.png"
+    }
+}
