@@ -180,7 +180,7 @@
                 "auction_ignored": "pranast_npc_auction_ignored_0",
                 "attacking": "pranast_npc_attacking_0"
             }
-        },
+        },        
         "ai_params":
         {
             "will_fleet_colonize": false,
@@ -223,7 +223,7 @@
             ]
         },
         {
-            "weight": 0.3,
+            "weight": 0.5,
             "bid_duration": 75.0,
             "rewards": [
                 "metal_market_monopolization_0",
@@ -237,7 +237,7 @@
             "bid_duration": 75.0,
             "rewards": [
                 "",
-                "pranast_armored_citadel",
+                "",
                 "pranast_armored_citadel",
                 "pranast_armored_citadel"]
         }],
@@ -253,14 +253,64 @@
             "sell_price": 1.5,
             "buy_price": 3.0
         },
+        "exotic_market":
+        {
+            "market_weight": 0,
+            "exotic_types": [
+            {
+                "exotic_name": "defense",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 750.0
+                }
+            },
+            {
+                "exotic_name": "economic",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 750.0
+                }
+            },
+            {
+                "exotic_name": "offense",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 750.0
+                }
+            },
+            {
+                "exotic_name": "ultimate",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 1500.0
+                }
+            },
+            {
+                "exotic_name": "utility",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 750.0
+                }
+            }]
+        },
         "simple_can_ever_be_colonized_planet_types": [
             "asteroid",
+            "barren",
+            "city",
+            "crystalline",
             "desert",
             "ferrous",
+            "hive_asteroid",
+            "ice_asteroid",
+            "ice_moon",
             "ice",
+            "magnetic",
             "moon",
             "oceanic",
+            "ship_graveyard",
+            "swamp",
             "terran",
+            "volcanic_moon",
             "volcanic"
         ],
         "simple_planet_level": 10,
@@ -279,16 +329,21 @@
             },
             "commerce":
             {
-                "credits_income_rate": 5
+                "credits_income_rate": 5,
+                "credits_income_rate_per_population": 0.05
             },
             "mining":
             {
                 "metal_income_rate": 3.0,
-                "crystal_income_rate": 1.5
+                "crystal_income_rate": 1.5,
+                "metal_income_rate_per_population": 0.03,
+                "crystal_income_rate_per_population": 0.015
             },
             "research":
             {},
             "surveying":
+            {},
+            "focus":
             {}
         },
         "simple_trade_capacity":
@@ -301,6 +356,7 @@
         },
         "reputation":
         {
+            "reward_between_gravity_well_range": 10.0,
             "rewards": [
             {
                 "reward": "pranast_deploy_gauss_defense_structure",
@@ -356,7 +412,7 @@
         ],
         "starting_elevator_count": 3,
         "per_level_elevator_count": 0.4,
-        "explosion_effect": "explosion_frigate",
+        "explosion_effect": "trader_planet_elevator_explosion",
         "explosion_sound": "explosion_frigateshipdeath",
         "car_count_per_elevator_connection": 35,
         "car_max_travel_time": 80.0,

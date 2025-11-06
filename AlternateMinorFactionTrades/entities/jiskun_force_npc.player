@@ -11,7 +11,7 @@
     },
     "home_planet":
     {
-        "random_fixture_filling": "random_asteroid_planet",
+        "random_fixture_filling": "random_hive_asteroid_planet",
         "levels": [
         {
             "income_rates":
@@ -115,7 +115,7 @@
                 "auction_ignored": "jiskun_npc_auction_ignored_0",
                 "attacking": "jiskun_npc_attacking_0"
             }
-        },
+        },        
         "ai_params":
         {
             "will_fleet_colonize": false,
@@ -147,23 +147,13 @@
             ]
         },
         {
-            "weight": 0.5,
+            "weight": 0.3,
             "bid_duration": 75.0,
             "rewards": [
                 "",
                 "jiskun_frontier_lab",
                 "jiskun_frontier_lab",
                 "jiskun_frontier_lab"
-            ]
-        },
-        {
-            "weight": 0.5,
-            "bid_duration": 75.0,
-            "rewards": [
-                "",
-                "viturak_phase_crystalizer",
-                "viturak_phase_crystalizer",
-                "viturak_phase_crystalizer"
             ]
         }],
         "crystal_market":
@@ -178,14 +168,65 @@
             "sell_price": 1.5,
             "buy_price": 3.0
         },
+        "exotic_market":
+        {
+            "market_weight": 5,
+            "exotic_types": [
+            {
+                "exotic_name": "defense",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 750.0
+                }
+            },
+            {
+                "exotic_name": "economic",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 750.0
+                }
+            },
+            {
+                "exotic_name": "offense",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 750.0
+                }
+            },
+            {
+                "exotic_name": "ultimate",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 1500.0
+                }
+            },
+            {
+                "exotic_name": "utility",
+                "exotic_definition":
+                {
+                    "sell_credits_amount": 750.0
+                }
+            }]
+        },
         "simple_can_ever_be_colonized_planet_types": [
             "asteroid",
+            "barren",
+            "city",
+            "crystalline",
             "desert",
             "ferrous",
+            "gas_giant",
+            "hive_asteroid",
+            "ice_asteroid",
+            "ice_moon",
             "ice",
+            "magnetic",
             "moon",
             "oceanic",
+            "ship_graveyard",
+            "swamp",
             "terran",
+            "volcanic_moon",
             "volcanic"
         ],
         "simple_planet_level": 10,
@@ -212,6 +253,8 @@
             "research":
             {},
             "surveying":
+            {},
+            "focus":
             {}
         },
         "simple_trade_capacity":
@@ -221,6 +264,7 @@
         },
         "reputation":
         {
+            "reward_between_gravity_well_range": 10.0,
             "rewards": [
             {
                 "reward": "jiskun_colony_nanites",

@@ -14,7 +14,7 @@
                 "action_type": "use_unit_operators_on_units_in_gravity_well_of_unit",
                 "gravity_well_origin_unit":
                 {
-                    "unit_type": "target"
+                    "unit_type": "home_planet"
                 },
                 "operators_constraint":
                 {
