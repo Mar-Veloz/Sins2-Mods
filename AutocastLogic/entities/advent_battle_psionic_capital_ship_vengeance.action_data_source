@@ -3,6 +3,28 @@
     "level_count": 3,
     "target_filters": [
     {
+        "target_filter_id": "vengeance_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "starbase",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "has_recently_been_damaged"
+            }]
+        }
+    },
+    {
         "target_filter_id": "vengeance_auto_cast_target_filter",
         "target_filter":
         {
@@ -25,7 +47,7 @@
             {
                 "constraint_type": "has_recently_been_damaged"
             }]
-        }
+                    }
     },
     {
         "target_filter_id": "vengeance_damage_propogation_target_filter",
@@ -40,7 +62,7 @@
             {
                 "constraint_type": "has_health"
             }]
-        }        
+        }
     },
     {
         "target_filter_id": "vengeance_target_filter",
