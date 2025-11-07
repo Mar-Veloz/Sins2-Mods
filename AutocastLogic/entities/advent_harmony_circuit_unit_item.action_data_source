@@ -8,6 +8,7 @@
             "unit_types": [
                 "capital_ship",
                 "starbase",
+                "super_capital_ship",
                 "titan"
             ],
             "ownerships": [
@@ -45,6 +46,7 @@
                 "frigate",
                 "starbase",
                 "structure",
+                "super_capital_ship",
                 "titan"
             ],
             "ownerships": [

@@ -77,7 +77,7 @@
         "action_value_id": "reverie_range_value",
         "action_value":
         {
-            "values": [6500.0, 6500.0, 6500.0]
+            "values": [9000.0, 9000.0, 9000.0]
         }
     }]
 }

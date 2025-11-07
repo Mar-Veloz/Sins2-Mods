@@ -12,6 +12,7 @@
                 "frigate",
                 "starbase",
                 "structure",
+                "super_capital_ship",
                 "titan"
             ],
             "ownerships": [
@@ -27,6 +28,21 @@
         }
     },
     {
+        "target_filter_id": "vengeance_damage_propogation_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_health"
+            }]
+        }        
+    },
+    {
         "target_filter_id": "vengeance_target_filter",
         "target_filter":
         {
@@ -36,6 +52,7 @@
                 "frigate",
                 "starbase",
                 "structure",
+                "super_capital_ship",
                 "titan"
             ],
             "ownerships": [
@@ -81,7 +98,7 @@
         "action_value_id": "vengeance_range_value",
         "action_value":
         {
-            "values": [8000.0, 8000.0, 8000.0]
+            "values": [6000.0, 6000.0, 6000.0]
         }
     }]
 }

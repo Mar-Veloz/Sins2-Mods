@@ -12,6 +12,7 @@
                 "cruiser",
                 "frigate",
                 "structure",
+                "super_capital_ship",
                 "titan"
             ],
             "ownerships": [
@@ -44,6 +45,7 @@
                 "cruiser",
                 "frigate",
                 "structure",
+                "super_capital_ship",
                 "titan"
             ],
             "ownerships": [

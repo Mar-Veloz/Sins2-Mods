@@ -62,6 +62,7 @@
     "gui":
     {
         "hud_icon": "vasari_battle_capital_ship_volatile_nanites_ability_hud_icon",
+        "tooltip_picture": "vasari_battle_capital_ship_volatile_nanites_ability_tooltip_picture",
         "name": "vasari_battle_capital_ship_volatile_nanites_ability_name",
         "description": "vasari_battle_capital_ship_volatile_nanites_ability_description",
         "targeting":
@@ -97,13 +98,14 @@
             "lines": [
             {
                 "rendering_type": "single_value",
-                "label_text": "tooltip.ability.radius",
+                "label_text": "tooltip.ability.damage_radius",
                 "value_id": "volatile_nanites_damage_radius_value"
             },
             {
                 "rendering_type": "single_value",
                 "label_text": "tooltip.ability.damage",
-                "value_id": "volatile_nanites_damage_value"
+                "value_id": "volatile_nanites_damage_value",
+                "value_color": "negative"
             },
             {
                 "visible_if_value_zero": true,

@@ -12,22 +12,6 @@
         {
             "actions": [
             {
-                "action_type": "use_position_operators_on_single_position",
-                "position":
-                {
-                    "position_type": "unit_position",
-                    "unit":
-                    {
-                        "unit_type": "target"
-                    }
-                },
-                "position_operators": [
-                {
-                    "operator_type": "create_buff_agent",
-                    "buff_on_agent": "advent_battle_psionic_capital_ship_malice_on_buff_agent"
-                }]
-            },
-            {
                 "action_type": "use_unit_operators_on_single_unit",
                 "destination_unit":
                 {
@@ -42,6 +26,10 @@
                         "mesh_point": "center",
                         "effect": "advent_battle_psionic_capital_ship_malice_activate"
                     }
+                },
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_battle_psionic_capital_ship_malice_on_self"
                 }]
             }]
         },
@@ -89,7 +77,18 @@
                 "label_text": "tooltip.ability.damage_propagation",
                 "value_id": "malice_damage_propagation_value",
                 "value_float_format": "percentage",
-                "ratio_float_format": "percentage_one_decimal_place_with_sign"
+                "ratio_float_format": "percentage_one_decimal_place_with_sign",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.max_targets",
+                "value_id": "malice_max_target_count_display_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "malice_radius_value"
             },
             {
                 "rendering_type": "single_value",
