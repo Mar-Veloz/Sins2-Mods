@@ -65,7 +65,7 @@
                     },
                     "radius_value": "volatile_nanites_debuff_radius_value",
                     "target_filter_id": "vasari_battle_capital_ship_volatile_nanites_auto_cast_target_filter",
-                    "target_count_value": "volatile_nanites_auto_cast_targets_value"
+                    "target_count_value": "volatile_nanites_auto_cast_target_count_value"
                 }
             }]
         }
