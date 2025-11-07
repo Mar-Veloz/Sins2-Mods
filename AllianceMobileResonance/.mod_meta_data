@@ -1,0 +1,11 @@
+{
+    "compatibility_version": 2,
+    "display_version": "1.0.0",
+    "display_name": "Vasari Alliance Mobile Resonance Capacitor",
+    "short_description": "Allows the Vasari Alliance to also access the Mobile Resonance Capacitor ship item.",
+    "long_description": "Allows the Vasari Alliance to also access the Mobile Resonance Capacitor ship item.",
+    "logos": {
+        "large_logo": "logo.png",
+        "small_logo": "logo.png"
+    }
+}
