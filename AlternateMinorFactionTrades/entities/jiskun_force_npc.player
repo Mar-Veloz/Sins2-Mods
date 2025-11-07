@@ -147,6 +147,16 @@
             ]
         },
         {
+            "weight": 0.8,
+            "bid_duration": 75.0,
+            "rewards": [
+                "",
+                "viturak_phase_crystalizer",
+                "viturak_phase_crystalizer",
+                "viturak_phase_crystalizer"
+            ]
+        },
+        {
             "weight": 0.3,
             "bid_duration": 75.0,
             "rewards": [
