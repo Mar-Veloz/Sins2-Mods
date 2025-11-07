@@ -60,6 +60,13 @@
     }],
     "action_values": [
     {
+        "action_value_id": "volatile_nanites_auto_cast_targets_value",
+        "action_value":
+        {
+            "values": [5.0]
+        }
+    },
+    {
         "action_value_id": "volatile_nanites_antimatter_cost_value",
         "action_value":
         {
