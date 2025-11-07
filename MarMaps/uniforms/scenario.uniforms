@@ -1,0 +1,17 @@
+{
+    "scenarios": [
+        "vortex",
+        "battle_royale",
+        "sagittarius_showdown",
+        "modded_shuriken",
+        "modded_gemini",
+        "modded_titans_of_cimtar",
+        "planets_reference"
+    ],
+    "fake_server_scenarios": [
+    ],
+    "dlc_scenarios": [
+    ],
+    "dlc_multiplayer_scenarios": [
+    ]
+}
