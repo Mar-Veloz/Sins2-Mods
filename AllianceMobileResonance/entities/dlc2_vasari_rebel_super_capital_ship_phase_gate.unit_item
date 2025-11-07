@@ -20,6 +20,6 @@
         "super_capital_ship"
     ],
     "max_count_on_unit": 1,
-    "build_group_id": "utility",
+    "build_group_id": "infrastructure",
     "ability": "dlc2_vasari_rebel_super_capital_ship_phase_gate"
 }

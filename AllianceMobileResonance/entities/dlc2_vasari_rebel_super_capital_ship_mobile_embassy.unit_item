@@ -15,7 +15,7 @@
         "super_capital_ship"
     ],
     "max_count_on_unit": 1,
-    "build_group_id": "utility",
+    "build_group_id": "infrastructure",
     "player_modifiers":
     {
         "empire_modifiers": [
