@@ -1,5 +1,6 @@
 {
     "version": 0,
+    "level_count": 2,
     "target_filters": [
     {
         "target_filter_id": "dissever_target_filter",
@@ -42,56 +43,56 @@
         "action_value_id": "dissever_antimatter_cost_value",
         "action_value":
         {
-            "values": [120.0]
+            "values": [120.0, 160.0]
         }
     },
     {
         "action_value_id": "dissever_cooldown_time_value",
         "action_value":
         {
-            "values": [120.0]
+            "values": [120.0, 120.0]
         }
     },
     {
         "action_value_id": "dissever_damage_rate_value",
         "action_value":
         {
-            "values": [30.0]
+            "values": [30.0, 40.0]
         }
     },
     {
         "action_value_id": "dissever_damage_value",
         "action_value":
         {
-            "values": [900.0]
+            "values": [900.0, 1350.0]
         }
     },
     {
         "action_value_id": "dissever_penetration_value",
         "action_value":
         {
-            "values": [500.0]
+            "values": [500.0, 500.0]
         }
     },
     {
         "action_value_id": "dissever_execution_count_value",
         "action_value":
         {
-            "values": [30.0]
+            "values": [30.0, 30.0]
         }
     },
     {
         "action_value_id": "dissever_radius_value",
         "action_value":
         {
-            "values": [6600.0]
+            "values": [6600.0, 7700.0]
         }
     },
     {
         "action_value_id": "dissever_auto_cast_target_count_value",
         "action_value":
         {
-            "values": [20.0]
+            "values": [20.0, 20.0]
         }
     }]
 }

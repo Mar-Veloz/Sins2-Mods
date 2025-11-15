@@ -3,7 +3,7 @@
     "action_data_source": "vasari_rebel_titan_dissever",
     "is_ultimate_ability": true,
     "level_source": "internal_level",
-    "min_required_unit_levels": [5],
+    "min_required_unit_levels": [5, 8],
     "active_actions":
     {
         "cooldown_time": "dissever_cooldown_time_value",
