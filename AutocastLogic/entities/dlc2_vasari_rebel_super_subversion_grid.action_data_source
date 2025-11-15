@@ -71,7 +71,7 @@
         "action_value_id": "subversion_grid_auto_cast_radius_value",
         "action_value":
         {
-            "values": [30000.0, 30000.0]
+            "values": [100000.0, 100000.0]
         }
     },
     {
