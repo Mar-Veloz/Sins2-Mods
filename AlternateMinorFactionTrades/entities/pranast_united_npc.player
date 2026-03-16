@@ -147,7 +147,12 @@
         "trader_autocannon_defense_structure",
         "trader_gauss_defense_structure",
         "trader_hangar_defense_structure",
+        "trader_culture_center_structure",
         "trader_starbase"
+    ],
+    
+    "allowed_traffic_ports": [
+        "trader_exotic_factory_structure"
     ],
     "ship_components": [
         "trader_starbase_unlock_beam_weapon",
@@ -155,12 +160,13 @@
     ],
     "npc":
     {
+        "can_survey_planets": false,
         "visuals": [
         {
             "name": "npc_player.pranast_united.name",
             "description": "npc_player.pranast_united.description",
-            "portrait": "miner_0",
-            "icon": "faction_11",
+            "portrait": "npc_pranast_0",
+            "icon": "faction_4",
             "color_group": "npc_pranast_united",
             "reputation_panel": "pranast_united_panel"
         }],
@@ -252,6 +258,34 @@
             "market_weight": 10,
             "sell_price": 1.5,
             "buy_price": 3.0
+        },
+        "bounty_market":
+        {
+            "market_weight": 2,
+            "bounty_cut": 0.4,
+            "metal_credit_value": 3.0,
+            "crystal_credit_value": 3.0,
+            "exotic_credit_values": [
+            {
+                "exotic_name": "offense",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "defense",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "utility",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "economic",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "ultimate",
+                "credit_value": 1500
+            }]
         },
         "exotic_market":
         {
@@ -351,7 +385,8 @@
             "export_points":
             {
                 "credits": 1,
-                "metal": 2
+                "metal": 1,
+                "crystal": 1
             }
         },
         "reputation":
@@ -404,6 +439,25 @@
                 {}
             }]
         }
+    },
+    "culture":
+    {
+        "base_allegiance_growth_rate_from_neutral": 0.1,
+        "base_allegiance_growth_rate_from_other_players": 0.025,
+        "base_max_allegiance_factor": 0.05,
+        "base_per_population_bonus_per_allied_population_percentage_scalar": 1.0,
+        "base_per_population_penalty_per_other_population_percentage_scalar": 1.0,
+        "base_allegiance_decay_rate": 0.05,
+        "allegiance_decay_exponent": 2.0,
+        "allegiance_decay_minimum_percentage": 0.01,
+        "decay_rates": [
+        {
+            "decay_rate": 0.02
+        }],
+        "propagation_rates": [
+        {
+            "propagation_rate_scalar": -2.0
+        }]
     },
     "planet_elevators":
     {

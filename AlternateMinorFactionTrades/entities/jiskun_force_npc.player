@@ -90,12 +90,13 @@
     ],
     "npc":
     {
+        "can_survey_planets": false,
         "visuals": [
         {
             "name": "npc_player.jiskun_force.name",
             "description": "npc_player.jiskun_force.description",
-            "portrait": "vasari_18",
-            "icon": "faction_13",
+            "portrait": "npc_jiskun_0",
+            "icon": "faction_0",
             "color_group": "npc_jiskun_force",
             "reputation_panel": "jiskun_force_panel"
         }],
@@ -177,6 +178,34 @@
             "market_weight": 0,
             "sell_price": 1.5,
             "buy_price": 3.0
+        },
+        "bounty_market":
+        {
+            "market_weight": 1,
+            "bounty_cut": 0.4,
+            "metal_credit_value": 3.0,
+            "crystal_credit_value": 3.0,
+            "exotic_credit_values": [
+            {
+                "exotic_name": "offense",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "defense",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "utility",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "economic",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "ultimate",
+                "credit_value": 1500
+            }]
         },
         "exotic_market":
         {
@@ -297,8 +326,8 @@
             {
                 "reward": "viturak_spawn_attack_ships",
                 "required_reputation_level": 3,
-                "influence_point_cost": 6,
-                "cooldown_duration": 480
+                "influence_point_cost": 8,
+                "cooldown_duration": 600
             }],
             "levels": [
             {
@@ -317,7 +346,7 @@
                 {}
             },
             {
-                "influence_point_cost": 6,
+                "influence_point_cost": 8,
                 "npc_modifiers":
                 {}
             }]
