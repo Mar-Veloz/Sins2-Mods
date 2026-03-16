@@ -102,12 +102,13 @@
     ],
     "npc":
     {
+        "can_survey_planets": false,
         "visuals": [
         {
             "name": "npc_player.viturak_cabal.name",
             "description": "npc_player.viturak_cabal.description",
-            "portrait": "vasari_13",
-            "icon": "faction_7",
+            "portrait": "npc_viturak_0",
+            "icon": "faction_13",
             "color_group": "npc_viturak_cabal",
             "reputation_panel": "viturak_cabal_panel"
         }],
@@ -209,6 +210,34 @@
             "market_weight": 0,
             "sell_price": 1.5,
             "buy_price": 3.0
+        },
+        "bounty_market":
+        {
+            "market_weight": 2,
+            "bounty_cut": 0.4,
+            "metal_credit_value": 3.0,
+            "crystal_credit_value": 3.0,
+            "exotic_credit_values": [
+            {
+                "exotic_name": "offense",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "defense",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "utility",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "economic",
+                "credit_value": 750
+            },
+            {
+                "exotic_name": "ultimate",
+                "credit_value": 1500
+            }]
         },
         "exotic_market":
         {
