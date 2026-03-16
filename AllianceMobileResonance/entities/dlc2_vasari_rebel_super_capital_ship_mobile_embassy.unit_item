@@ -15,7 +15,7 @@
         "super_capital_ship"
     ],
     "max_count_on_unit": 1,
-    "build_group_id": "infrastructure",
+    "build_group_id": "utility",
     "player_modifiers":
     {
         "empire_modifiers": [
@@ -28,5 +28,9 @@
     "npc_range_origin":
     {
         "between_gravity_well_range": 18.0
+    },
+    "phase_resonance_capacitor":
+    {
+        "time_to_store_point": [10]
     }
 }
