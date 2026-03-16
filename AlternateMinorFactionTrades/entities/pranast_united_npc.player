@@ -421,22 +421,46 @@
             {
                 "influence_point_cost": 1,
                 "npc_modifiers":
-                {}
+                {
+                    "buy_metal_credits_cost":
+                    {
+                        "value_behavior": "scalar",
+                        "value": -0.1
+                    }
+                }
             },
             {
                 "influence_point_cost": 2,
                 "npc_modifiers":
-                {}
+                {
+                    "buy_metal_credits_cost":
+                    {
+                        "value_behavior": "scalar",
+                        "value": -0.15
+                    }
+                }
             },
             {
                 "influence_point_cost": 4,
                 "npc_modifiers":
-                {}
+                {
+                    "buy_metal_credits_cost":
+                    {
+                        "value_behavior": "scalar",
+                        "value": -0.2
+                    }
+                }
             },
             {
                 "influence_point_cost": 6,
                 "npc_modifiers":
-                {}
+                {
+                    "buy_metal_credits_cost":
+                    {
+                        "value_behavior": "scalar",
+                        "value": -0.25
+                    }
+                }
             }]
         }
     },
