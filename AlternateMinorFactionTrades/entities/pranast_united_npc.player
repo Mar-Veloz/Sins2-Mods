@@ -239,13 +239,13 @@
             ]
         },
         {
-            "weight": 0.5,
+            "weight": 2.0,
             "bid_duration": 75.0,
             "rewards": [
                 "",
-                "pranast_armored_citadel",
-                "pranast_armored_citadel",
-                "pranast_armored_citadel"]
+                "",
+                "pranast_bastion_module",
+                "pranast_bastion_module"]
         }],
         "crystal_market":
         {
@@ -406,7 +406,7 @@
                 "cooldown_duration": 240
             },
             {
-                "reward": "pranast_bastion_module",
+                "reward": "pranast_armored_citadel",
                 "required_reputation_level": 2,
                 "influence_point_cost": 4,
                 "cooldown_duration": 360
