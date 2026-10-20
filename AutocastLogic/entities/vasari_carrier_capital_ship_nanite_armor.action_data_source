@@ -42,9 +42,10 @@
         "target_filter":
         {
             "unit_types": [
-                "cruiser",
-                "frigate",
-                "structure"
+                "capital_ship",
+                "starbase",
+                "super_capital_ship",
+                "titan"
             ],
             "ownerships": [
                 "friendly"
@@ -59,15 +60,6 @@
             {
                 "constraint_type": "has_missing_armor",
                 "percentage_missing_threshold": 0.6
-            },
-            {
-                "constraint_type": "composite_not",
-                "constraint":
-                {
-                    "constraint_type": "has_buff",
-                    "buff": "vasari_carrier_capital_ship_nanite_armor",
-                    "include_pending_buffs": true
-                }
             }]
         }
     },
