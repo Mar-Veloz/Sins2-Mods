@@ -37,6 +37,6 @@
     {
         "modifier_type": "max_allied_population_factor",
         "value_behavior": "additive",
-        "values": [0.36]
+        "values": [0.18]
     }]
 }

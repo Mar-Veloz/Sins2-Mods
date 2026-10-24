@@ -22,7 +22,7 @@
         {
             "modifier_type": "max_influence_points",
             "value_behavior": "additive",
-            "value": 3.0
+            "value": 1.0
         }]
     },
     "npc_range_origin":
