@@ -58,7 +58,7 @@
             "tiers": [
             {
                 "tier": 0,
-                "count": [4, 5]
+                "count": [5, 5]
             }]
         },
         "destroyed_planet":

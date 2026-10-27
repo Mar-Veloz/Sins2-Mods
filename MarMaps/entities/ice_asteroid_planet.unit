@@ -49,7 +49,7 @@
             "tiers": [
             {
                 "tier": 0,
-                "count": [0, 1]
+                "count": [1, 1]
             }]
         },
         "random_crystal_asteroids":
@@ -57,7 +57,7 @@
             "tiers": [
             {
                 "tier": 0,
-                "count": [2, 3]
+                "count": [3, 3]
             }]
         },
         "destroyed_planet":
